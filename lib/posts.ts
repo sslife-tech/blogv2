@@ -9,7 +9,7 @@ export interface PostSummary {
     title: string;
     date: number;
     author: string;
-    main_image: string;
+    thumbnail: string;
     description: string;
     tags: string[];
 }
@@ -68,14 +68,14 @@ class PostNotFound extends Error {
 }
 
 const formatSummary = (slug: string, matterResult: GrayMatterFile<string>): PostSummary => {
-    const {date, title, author, main_image, description, tags} = matterResult.data;
+    const {date, title, author, thumbnail, description, tags} = matterResult.data;
 
     return {
         slug,
         date: Date.parse(date),
         title,
         author,
-        main_image,
+        thumbnail,
         description,
         tags
     };

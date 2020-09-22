@@ -4,8 +4,7 @@ description: ""
 tags: ['お知らせ']
 author: shota
 date: 2017-09-24T17:21:45+09:00
-main_image: /images/logo.png
-draft: false
+thumbnail: /images/logo.png
 ---
 
 ![logo](/images/logo.png)

@@ -2,6 +2,7 @@ import React from "react";
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document';
 import {DocumentInitialProps} from "next/dist/next-server/lib/utils";
 import config from "~/Configuration";
+import {FirebaseSDKLoader} from "~/components/atoms/FirebaseSDKLoader";
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -32,10 +33,7 @@ class MyDocument extends Document {
                 <body>
                 <Main/>
                 <NextScript/>
-                {/* Firebase SDK */}
-                <script src="/__/firebase/7.21.0/firebase-app.js"/>
-                <script src="/__/firebase/7.21.0/firebase-analytics.js"/>
-                <script src="/__/firebase/init.js"/>
+                <FirebaseSDKLoader/>
                 </body>
             </Html>
         );
