@@ -8,6 +8,10 @@
     color: #2d53fe;
 }
 
+.img_container > div {
+    height: 100%;
+}
+
 .img_container img {
     object-fit: cover;
     width: 100%;
