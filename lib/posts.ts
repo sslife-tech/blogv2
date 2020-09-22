@@ -39,6 +39,13 @@ const getSortedPosts = (): PostSummary[] => {
     })
 }
 
+const relatedPosts = (post: PostSummary, max: number = 5): PostSummary[] =>
+    getSortedPosts()
+        .filter((p) =>
+            post.tags.find((tag) => p.tags.includes(tag)) !== undefined
+        )
+        .slice(0, max)
+
 const findPost = async (slug: string): Promise<PostDetail> => {
     const fullPath = path.join(postsDirectory, `${slug}.md`)
     if (!fs.existsSync(fullPath)) {
@@ -77,5 +84,6 @@ const formatSummary = (slug: string, matterResult: GrayMatterFile<string>): Post
 export {
     PostNotFound,
     getSortedPosts,
+    relatedPosts,
     findPost,
 }
