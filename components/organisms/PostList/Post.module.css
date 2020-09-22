@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.container:hover {
+    color: #2d53fe;
+}
+
+.img_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.img_container {
+    width: 30%;
+    height: 170px;
+}
+
+.text_container {
+    padding: 24px 48px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 18px;
+}
+
+.time {
+    font-size: .9em;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: block;
+    }
+
+    .img_container {
+        width: 100%;
+    }
+
+    .text_container {
+        padding: 24px 4px;
+    }
+
+    .title {
+        font-size: 1.4em;
+    }
+}

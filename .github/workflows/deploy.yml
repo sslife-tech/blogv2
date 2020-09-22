@@ -32,3 +32,4 @@ jobs:
       - run: npm run deploy -- --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          BASE_URL: https://www.sslife.tech

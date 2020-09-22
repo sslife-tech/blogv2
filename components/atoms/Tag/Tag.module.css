@@ -1,0 +1,13 @@
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px #17c671 solid;
+    border-radius: 16px;
+    color: #17c671;
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.tag:last-child {
+    margin-right: 0;
+}
