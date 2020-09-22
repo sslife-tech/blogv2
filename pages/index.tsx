@@ -1,5 +1,4 @@
 import React from "react";
-import styles from '~/styles/Home.module.css'
 import {GetStaticProps, NextPage} from "next";
 import {getSortedPosts, PostSummary} from "~/lib/posts";
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
@@ -15,7 +14,7 @@ const Home: NextPage<Props> = ({posts}) => (
     </DefaultLayout>
 )
 
-export const getStaticProps: GetStaticProps = async ({params}) => ({
+export const getStaticProps: GetStaticProps = async () => ({
     props: {
         posts: getSortedPosts(),
     }
