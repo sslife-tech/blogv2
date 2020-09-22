@@ -1,6 +1,9 @@
-.title {
-  color: #0070f3;
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
+.main {
+  margin-top: 90px;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin-top: 60px;
+  }
 }
