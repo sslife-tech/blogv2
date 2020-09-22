@@ -10,6 +10,7 @@ import style from "~/styles/PostSlug.module.css";
 import {Time} from "~/components/atoms/Time";
 import {Container} from "~/components/atoms/Container";
 import {HTML} from "~/components/atoms/HTML";
+import {getAuthor} from "~/components/organisms/Author";
 
 type Props = {
     post: PostDetail;
@@ -36,11 +37,11 @@ const PostPage: NextPage<Props> = ({post}) => {
                         <div>
                             {tags}
                         </div>
-                        <div>
-                            {post.author}
-                        </div>
                     </div>
                     <HTML html={post.html}/>
+                    <div className={style.author}>
+                        {getAuthor(post.author)}
+                    </div>
                 </article>
             </Container>
         </DefaultLayout>
