@@ -1,6 +1,6 @@
 ---
-title: "入門UniFi沼"
-description: "引っ越しや車の購入が相まって今年に入ってからものすごい勢いでUniFi製品を買い揃えているので、何をどう使っているのかご紹介したいと思います。"
+title: UniFiで始める自宅ネットワーク入門
+description: "今年に入ってからスイッチや防犯カメラなど、ものすごい勢いでUniFi製品を買い揃えています。どのUniFi製品をどう使っているのかをご紹介します。"
 tags: ["UniFi", "自宅環境"]
 author: shota
 thumbnail: /images/posts/unifi_01.jpg
