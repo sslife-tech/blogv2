@@ -3,11 +3,11 @@ title: "Blog引っ越しました"
 description: ""
 tags: ['お知らせ']
 author: shota
-thumbnail: /images/blog/firebase.png
+thumbnail: /images/posts/firebase.png
 date: 2018-06-04T08:24:36+09:00
 ---
 
-![](/images/blog/firebase.png)
+![](/images/posts/firebase.png)
 
 今まで使っていた[はてなブログ](https://hatenablog.com/)を捨てて、[HUGO](https://gohugo.io/) x [Firebase](https://firebase.google.com/?hl=ja)に引っ越ししました。
 

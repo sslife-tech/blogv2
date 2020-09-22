@@ -3,11 +3,11 @@ title: "グランドキャニオンをレンタカーで周遊してきました
 description: ""
 tags: ["旅行", "海外旅行", "アメリカ"]
 author: shota
-thumbnail: /images/blog/grand_canyon/antelope_canyon.jpg
+thumbnail: /images/posts/grand_canyon/antelope_canyon.jpg
 date: 2019-07-25T18:28:22-07:00
 ---
 
-![antelope canyon](/images/blog/grand_canyon/antelope_canyon.jpg)
+![antelope canyon](/images/posts/grand_canyon/antelope_canyon.jpg)
 
 新婚旅行でまずはアメリカ、グランドキャニオンに来ました！
 
@@ -29,9 +29,9 @@ date: 2019-07-25T18:28:22-07:00
 
 The wave の抽選はそれほど難しくないのですが、ユタ州にあり他のグランドキャニオンでの時間と1時間時差がありました。Kanabに宿泊しない場合は気をつけたほうがいいでしょう。
 
-![](/images/blog/grand_canyon/kaban_visitor_center.jpg)
+![](/images/posts/grand_canyon/kaban_visitor_center.jpg)
 
-![](/images/blog/grand_canyon/the_wave_caption.jpg)
+![](/images/posts/grand_canyon/the_wave_caption.jpg)
 
 
 抽選時に車のNumberや車種を記載する欄があったので予め抑えておきましょう。
@@ -42,7 +42,7 @@ The Waveの抽選の後、移動し、Horseshoe BendとAntelope Canyonを見に�
 
 Horseshoe Bendは駐車料金10USDのみ、Antelope Canyonはあらかじめ予約してた現地のツアーで65USD＋チップでした。
 
-![](/images/blog/grand_canyon/horseshoe_bend.jpg)
+![](/images/posts/grand_canyon/horseshoe_bend.jpg)
 
 ### 3日目
 
@@ -54,11 +54,11 @@ Horseshoe Bendは駐車料金10USDのみ、Antelope Canyonはあらかじめ予�
 - Sky Walk
 - Las Vegas郊外のリゾートへ
 
-![](/images/blog/grand_canyon/sky_walk_view.jpg)
+![](/images/posts/grand_canyon/sky_walk_view.jpg)
 
 Sky Walkでは、床がガラス張りになったここにいけます。
 
-![](/images/blog/grand_canyon/sky_walk_stage.jpg)
+![](/images/posts/grand_canyon/sky_walk_stage.jpg)
 
 ### 5日目
 
@@ -69,7 +69,7 @@ Sky Walkでは、床がガラス張りになったここにいけます。
 
 ラスベガスの空港で降りてまずはレンタカーを借りました。
 
-![ラスベガスのレンタカーセンター](/images/blog/grand_canyon/rental_car_center.jpg)
+![ラスベガスのレンタカーセンター](/images/posts/grand_canyon/rental_car_center.jpg)
 
 ホテルでも借りれるようですが、マッカランレンタカーセンターで借りると空港からシャトルバスで送迎してくれます。
 
@@ -104,7 +104,7 @@ The Waveは保護の観点から1日あたり20人しか入場することがで
 
 抽選会場はこんな雰囲気。
 
-![](/images/blog/grand_canyon/the_wave_lottery.jpg)
+![](/images/posts/grand_canyon/the_wave_lottery.jpg)
 
 ## Antelope Canyonは事前予約が必要
 
@@ -112,11 +112,11 @@ Antelope Canyonは現地人の同伴じゃないと入れないのでツアー�
 
 また、Antelope Canyon内を撮影するときは曇りモードで撮影すると綺麗に撮れます。
 
-![](/images/blog/grand_canyon/antelope_canyon.jpg)
+![](/images/posts/grand_canyon/antelope_canyon.jpg)
 
 多分、ガイドの人が案内してたと思うんですが、聞き取れず、最後の方に気づきました...
 
-![](/images/blog/grand_canyon/antelope_canyon_02.jpg)
+![](/images/posts/grand_canyon/antelope_canyon_02.jpg)
 
 みんな一生懸命写真撮ってる
 
@@ -126,16 +126,16 @@ Antelope Canyonは現地人の同伴じゃないと入れないのでツアー�
 
 移動時間多めといっても、自分で車を運転して一周するので、移動そのものも楽しめました。
 
-![](/images/blog/grand_canyon/drive_01.jpg)
+![](/images/posts/grand_canyon/drive_01.jpg)
 果てしなく道が続く。地球大きいなぁ
 
-![](/images/blog/grand_canyon/drive_02.jpg)
+![](/images/posts/grand_canyon/drive_02.jpg)
 果てしなく・・・
 
-![](/images/blog/grand_canyon/drive_03.jpg)
+![](/images/posts/grand_canyon/drive_03.jpg)
 街を過ぎるごとに景観が変わっていくのが楽しめる
 
-![](/images/blog/grand_canyon/drive_04.jpg)
+![](/images/posts/grand_canyon/drive_04.jpg)
 途中、浪漫に満ちた橋も渡る
 
 ## 他の都市でもレンタカーするならまずはラスベガスがおすすめ

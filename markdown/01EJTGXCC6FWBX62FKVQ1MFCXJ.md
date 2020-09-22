@@ -4,7 +4,7 @@ description: ""
 tags: ['国内旅行','旅行']
 author: shiori
 date: 2017-09-25T19:01:44+09:00
-thumbnail: /images/blog/kamikochi13.jpg
+thumbnail: /images/posts/kamikochi13.jpg
 ---
 
 上高地に行きたくなった理由、それは一冊の本を手に取ったからでした。
@@ -19,7 +19,7 @@ thumbnail: /images/blog/kamikochi13.jpg
 上高地はマイカー規制がかかっているため、沢渡駐車場に車を置きます。
 そこからバスに乗り換えで30分程で上高地につきました。
 
-![kamikochi1](/images/blog/kamikochi1.jpg)
+![kamikochi1](/images/posts/kamikochi1.jpg)
 
 ※2017/8月 時点の時刻表になります。ご注意ください
 
@@ -27,45 +27,45 @@ thumbnail: /images/blog/kamikochi13.jpg
 
 ### 大正池
 
-![kamikochi2](/images/blog/kamikochi2.jpg)
+![kamikochi2](/images/posts/kamikochi2.jpg)
 
-![kamikochi3](/images/blog/kamikochi3.jpg)
+![kamikochi3](/images/posts/kamikochi3.jpg)
 
 朝方まで雨だったので濁流...笑
 
-![kamikochi4](/images/blog/kamikochi4.jpg)
+![kamikochi4](/images/posts/kamikochi4.jpg)
 
 こんな綺麗な水が流れているところの道を歩きながら
 
-![kamikochi5](/images/blog/kamikochi5.jpg)
+![kamikochi5](/images/posts/kamikochi5.jpg)
 
 ### 河童橋
 
-![kamikochi6](/images/blog/kamikochi6.jpg)
+![kamikochi6](/images/posts/kamikochi6.jpg)
 
 また少し歩くと休憩所。カレーとか食べてる人がいて美味しそうだった。
 
-![kamikochi7](/images/blog/kamikochi7.jpg)
+![kamikochi7](/images/posts/kamikochi7.jpg)
 
 <script data-ad-client="ca-pub-9971307452839678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 ### 明神池
 神々しいぐらいの池。上高地に行くのなら絶対行くべき。
 
-![kamikochi8](/images/blog/kamikochi8.jpg)
+![kamikochi8](/images/posts/kamikochi8.jpg)
 
-![kamikochi9](/images/blog/kamikochi9.jpg)
+![kamikochi9](/images/posts/kamikochi9.jpg)
 
-![kamikochi10](/images/blog/kamikochi10.jpg)
+![kamikochi10](/images/posts/kamikochi10.jpg)
 
-![kamikochi11](/images/blog/kamikochi11.jpg)
+![kamikochi11](/images/posts/kamikochi11.jpg)
 
-![kamikochi12](/images/blog/kamikochi12.jpg)
+![kamikochi12](/images/posts/kamikochi12.jpg)
 
 ### 河童橋から見える穂高連峰の山々
 帰りはとても晴れてました。きれい！
 
-![kamikochi13](/images/blog/kamikochi13.jpg)
+![kamikochi13](/images/posts/kamikochi13.jpg)
 
 終わりーーーーーーー
 

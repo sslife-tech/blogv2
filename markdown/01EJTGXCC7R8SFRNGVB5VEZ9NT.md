@@ -3,7 +3,7 @@ title: "結婚前・両家顔合わせポイント5つ"
 description: ""
 tags: ['結婚']
 author: shota
-thumbnail: /images/blog/family-meetup.jpg
+thumbnail: /images/posts/family-meetup.jpg
 date: 2018-06-09T11:33:29+09:00
 ---
 
@@ -41,7 +41,7 @@ date: 2018-06-09T11:33:29+09:00
 
 [レストラン予約［一休.comレストラン］](https://restaurant.ikyu.com/)
 
-![一休](/images/blog/ikkyu.jpg)
+![一休](/images/posts/ikkyu.jpg)
 
 また、レストランを決める前に、決済者を明確にしておきましょう！
 
@@ -61,13 +61,13 @@ date: 2018-06-09T11:33:29+09:00
 
 僕たちはトーク力に自信がなかったので、両家の紹介と僕たちの最近のアクティビティを冊子にまとめて配布しました。
 
-![会食会場](/images/blog/family-meetup.jpg)
+![会食会場](/images/posts/family-meetup.jpg)
 
 冊子は普通に作ると軽く1万円を超えてしまうので、[しまうまプリント](https://www.n-pri.jp/)でサクッと作りました。
 
 [しまうまプリント](https://www.n-pri.jp/)
 
-![しまうまプリント](/images/blog/shimauma-print.jpg)
+![しまうまプリント](/images/posts/shimauma-print.jpg)
 
 両家顔合わせフェーズでは、両親も「この子たちでちゃんとやっていけるかな」と不安に思ってるはずなので、バチッとキメて安心させてあげられると最高ですね！
 

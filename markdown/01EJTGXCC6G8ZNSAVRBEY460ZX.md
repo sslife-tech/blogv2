@@ -3,7 +3,7 @@ title: "バンコクの5つ星ホテル、The St. Regisのモーニングがコ�
 description: ""
 tags: ['旅行','海外旅行','タイ']
 author: shota
-thumbnail: /images/blog/thai_morning1.jpg
+thumbnail: /images/posts/thai_morning1.jpg
 date: 2017-10-17T20:23:44+09:00
 ---
 
@@ -25,19 +25,19 @@ https://www.marriott.com/hotels/travel/bkkxr-the-st-regis-bangkok/
 
 僕はエッグベネディクトを注文しました。
 
-![thai_morning1](/images/blog/thai_morning1.jpg)
+![thai_morning1](/images/posts/thai_morning1.jpg)
 
 しおりんはフレンチトーストを注文。
-![thai_morning2](/images/blog/thai_morning2.jpg)
+![thai_morning2](/images/posts/thai_morning2.jpg)
 
 えっ、パンもつけてくれるの・・・！？（半分も食べれてない）
-![thai_morning3](/images/blog/thai_morning3.jpg)
+![thai_morning3](/images/posts/thai_morning3.jpg)
 
 紅茶も豆スープもつきます。
-![thai_morning4](/images/blog/thai_morning4.jpg)
+![thai_morning4](/images/posts/thai_morning4.jpg)
 
 雰囲気はこんな感じ。おしゃれ！
-![thai_morning5](/images/blog/thai_morning5.jpg)
+![thai_morning5](/images/posts/thai_morning5.jpg)
 
 1700円で5つ星ホテルモーニング。大満足でした！
 

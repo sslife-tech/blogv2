@@ -3,11 +3,11 @@ title: "バンコク市内を移動するならバスがおすすめ！"
 description: ""
 tags: ['旅行','海外旅行','タイ']
 author: shota
-thumbnail: /images/blog/thai_bus1.jpg
+thumbnail: /images/posts/thai_bus1.jpg
 date: 2017-10-17T21:44:01+09:00
 ---
 
-![thai_bus1](/images/blog/thai_bus1.jpg)
+![thai_bus1](/images/posts/thai_bus1.jpg)
 
 東南アジアでタクシーを使うのは負け組だと思ってるしょうちゃんです。
 
@@ -21,17 +21,17 @@ Google Map、知ってますか？
 
 Google Mapを使うとバス停の場所と乗るバスの番号を教えてくれるので、タイ語がわからなくてもダイジョブです！
 
-![thai_bus2](/images/blog/thai_bus2.jpg)
+![thai_bus2](/images/posts/thai_bus2.jpg)
 
 乗車したら、集金の人にお金を払います。
 
 車内に書いてありますが、大体、ボロくて冷房がなかったら9バーツ（30円）、きれいめだったら13バーツ（45円）です。
 
 ぼろいほう（9バーツ）
-![thai_bus3](/images/blog/thai_bus3.jpg)
+![thai_bus3](/images/posts/thai_bus3.jpg)
 
 きれいめなほう（13バーツ）
-![thai_bus4](/images/blog/thai_bus4.jpg)
+![thai_bus4](/images/posts/thai_bus4.jpg)
 
 <script data-ad-client="ca-pub-9971307452839678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 

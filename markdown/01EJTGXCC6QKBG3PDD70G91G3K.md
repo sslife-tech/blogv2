@@ -3,13 +3,13 @@ title: "タイの秘境ピピレ島の海が素敵すぎた"
 description: ""
 tags: ['旅行','海外旅行','タイ']
 author: shiori
-thumbnail: /images/blog/phiphi_01.jpg
+thumbnail: /images/posts/phiphi_01.jpg
 date: 2017-10-29T22:41:41+09:00
 ---
 
 # ピピレ島の一番好きな写真を1枚
 
-![](/images/blog/phiphi_01.jpg)
+![](/images/posts/phiphi_01.jpg)
 
 今回はしおりんがやる気を出して書いてみました。
 
@@ -32,7 +32,7 @@ date: 2017-10-29T22:41:41+09:00
 
 島の入り江に船が沢山船が置いてあります。コレで行きました！
 
-![](/images/blog/phiphi_02.jpg)
+![](/images/posts/phiphi_02.jpg)
 
 # どうやって行くの？
 ---
@@ -55,7 +55,7 @@ date: 2017-10-29T22:41:41+09:00
 
 前日の夜に交渉したのでデポジットとして500THB 渡して交渉成立（何となく証拠として写真をパシャリ）
 
-![](/images/blog/phiphi_03.jpg)
+![](/images/posts/phiphi_03.jpg)
 
 (相変わらず変な顔してます)
 
@@ -72,16 +72,16 @@ date: 2017-10-29T22:41:41+09:00
 眠すぎる。。。。。
 
 
-![](/images/blog/phiphi_04.jpg)
+![](/images/posts/phiphi_04.jpg)
 
 船に乗ってる間に朝日が出ました。少しおすそ分け。
 
-![](/images/blog/phiphi_05.jpg)
+![](/images/posts/phiphi_05.jpg)
 
-![](/images/blog/phiphi_06.jpg)
+![](/images/posts/phiphi_06.jpg)
 
 
-![](/images/blog/phiphi_07.jpg)
+![](/images/posts/phiphi_07.jpg)
 
 
 ちなみにピピレ島は国立海洋公園？らしいので、** 入島税** として一人あたり 400 THB 支払います当日忘れないようにしましょう！（行く際には）
@@ -90,18 +90,18 @@ date: 2017-10-29T22:41:41+09:00
 まずマヤベイと呼ばれる、映画「ザ・ビーチ」などで使用されたことのあるプライベートビーチ満載の場所に。あとはシュノーケリングしてシュノーケリングして海で遊んで！楽しいかった！海きれいだった！っていう頭悪い感じで素人の我々でもきれいに取れる写真を載せていきます！
 
 
-![](/images/blog/phiphi_08.jpg)
+![](/images/posts/phiphi_08.jpg)
 
-![](/images/blog/phiphi_09.jpg)
+![](/images/posts/phiphi_09.jpg)
 
-![](/images/blog/phiphi_10.jpg)
+![](/images/posts/phiphi_10.jpg)
 
-![](/images/blog/phiphi_11.jpg)
+![](/images/posts/phiphi_11.jpg)
 
-![](/images/blog/phiphi_12.jpg)
+![](/images/posts/phiphi_12.jpg)
 
 (溺れそうな人が笑)
-![](/images/blog/phiphi_13.jpg)
+![](/images/posts/phiphi_13.jpg)
 
 
 書くの途中からめんどくさくなってしまいましたが！
