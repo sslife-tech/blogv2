@@ -1,7 +1,7 @@
 import {findPost, getSortedPosts, PostDetail, PostSummary, relatedPosts} from "~/lib/posts";
 import {NextPage, GetStaticPaths, GetStaticProps} from "next";
 import React from "react";
-import Head from 'next/head'
+import Head from 'next/head';
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
 import config from "~/Configuration";
 import {PageTitle} from "~/components/atoms/PageTitle";
@@ -19,8 +19,8 @@ type Props = {
 }
 
 const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
-    const date: Date = new Date(post.date)
-    const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>)
+    const date: Date = new Date(post.date);
+    const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>);
 
     return (
         <DefaultLayout>
@@ -53,8 +53,8 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
                 </section>
             </Container>
         </DefaultLayout>
-    )
-}
+    );
+};
 
 export const getStaticPaths: GetStaticPaths = async () => ({
     paths: getSortedPosts().map(post => `/posts/${post.slug}`) || [],
@@ -62,13 +62,13 @@ export const getStaticPaths: GetStaticPaths = async () => ({
 });
 
 export const getStaticProps: GetStaticProps<Props> = async ({params}) => {
-    const post = await findPost(params.slug as string)
+    const post = await findPost(params.slug as string);
     return {
         props: {
             post,
             relatedPosts: relatedPosts(post)
         }
-    }
-}
+    };
+};
 
-export default PostPage
+export default PostPage;

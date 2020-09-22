@@ -1,7 +1,7 @@
 import React from "react";
 import {AppProps} from "next/app";
-import '~/styles/reset.css'
-import '~/styles/globals.css'
+import '~/styles/reset.css';
+import '~/styles/globals.css';
 import Head from "next/head";
 
 const app = ({Component, pageProps}: AppProps): JSX.Element => (
@@ -13,6 +13,6 @@ const app = ({Component, pageProps}: AppProps): JSX.Element => (
         <Component {...pageProps} />
     </>
 
-)
+);
 
 export default app;
