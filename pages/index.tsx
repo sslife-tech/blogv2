@@ -6,6 +6,7 @@ import {PostList} from "~/components/organisms/PostList";
 import style from '~/styles/Home.module.css'
 import Head from "next/head";
 import config from "~/Configuration";
+import {Container} from "~/components/atoms/Container";
 
 type Props = {
   posts: PostSummary[];
@@ -19,12 +20,14 @@ const Home: NextPage<Props> = ({posts}) => (
             <meta content={`${config.baseURL}/ogp.jpg`} property="og:image"/>
         </Head>
         <main className={style.main}>
-            <PostList posts={posts}/>
+            <Container>
+                <PostList posts={posts}/>
+            </Container>
         </main>
     </DefaultLayout>
 )
 
-export const getStaticProps: GetStaticProps = async () => ({
+export const getStaticProps: GetStaticProps<Props> = async () => ({
     props: {
         posts: getSortedPosts(),
     }

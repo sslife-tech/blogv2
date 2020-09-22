@@ -20,3 +20,15 @@
     margin-top: 60px;
   }
 }
+
+.related_container {
+  margin: 120px auto 0;
+  max-width: 740px;
+  width: 90%;
+}
+
+.related_container h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}

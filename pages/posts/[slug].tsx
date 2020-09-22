@@ -1,4 +1,4 @@
-import {findPost, getSortedPosts, PostDetail} from "~/lib/posts";
+import {findPost, getSortedPosts, PostDetail, PostSummary, relatedPosts} from "~/lib/posts";
 import {NextPage, GetStaticPaths, GetStaticProps} from "next";
 import React from "react";
 import Head from 'next/head'
@@ -11,12 +11,14 @@ import {Time} from "~/components/atoms/Time";
 import {Container} from "~/components/atoms/Container";
 import {HTML} from "~/components/atoms/HTML";
 import {getAuthor} from "~/components/organisms/Author";
+import {PostList} from "~/components/organisms/PostList";
 
 type Props = {
     post: PostDetail;
+    relatedPosts: PostSummary[];
 }
 
-const PostPage: NextPage<Props> = ({post}) => {
+const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
     const date: Date = new Date(post.date)
     const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>)
 
@@ -43,6 +45,12 @@ const PostPage: NextPage<Props> = ({post}) => {
                         {getAuthor(post.author)}
                     </div>
                 </article>
+                <section className={style.related_container}>
+                    <h1>
+                        関連記事
+                    </h1>
+                    <PostList posts={relatedPosts}/>
+                </section>
             </Container>
         </DefaultLayout>
     )
@@ -53,10 +61,14 @@ export const getStaticPaths: GetStaticPaths = async () => ({
     fallback: false,
 });
 
-export const getStaticProps: GetStaticProps = async ({params}) => ({
-    props: {
-        post: await findPost(params.slug as string),
+export const getStaticProps: GetStaticProps<Props> = async ({params}) => {
+    const post = await findPost(params.slug as string)
+    return {
+        props: {
+            post,
+            relatedPosts: relatedPosts(post)
+        }
     }
-})
+}
 
 export default PostPage
