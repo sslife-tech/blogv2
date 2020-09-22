@@ -1,6 +1,6 @@
 ---
 title: "Scrapboxというドキュメント共有ツールがよさげだった話"
-description: ""
+description: "Scrapboxというドキュメント共有ツールを紹介します。"
 tags: ['ITツール']
 author: shota
 thumbnail: /images/posts/scrapbox1.jpg

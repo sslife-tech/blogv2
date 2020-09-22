@@ -1,6 +1,6 @@
 ---
 title: "バンコクの5つ星ホテル、The St. Regisのモーニングがコスパ最強だった件"
-description: ""
+description: "バンコクの5つ星ホテルで食べた朝食が宿泊客はなくても食べれるので紹介しちゃいます。"
 tags: ['旅行','海外旅行','タイ']
 author: shota
 thumbnail: /images/posts/thai_morning1.jpg

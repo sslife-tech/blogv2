@@ -1,6 +1,6 @@
 ---
 title: "バンコク市内を移動するならバスがおすすめ！"
-description: ""
+description: "バスをうまくつかってバンコク市内を賢く移動する方法をご紹介します。"
 tags: ['旅行','海外旅行','タイ']
 author: shota
 thumbnail: /images/posts/thai_bus1.jpg

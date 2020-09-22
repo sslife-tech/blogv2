@@ -1,6 +1,6 @@
 ---
 title: "2人のブログはじめます"
-description: ""
+description: "2人のブログはじまります。"
 tags: ['お知らせ']
 author: shota
 date: 2017-09-24T17:21:45+09:00

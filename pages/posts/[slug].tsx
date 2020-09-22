@@ -22,6 +22,17 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
     const date: Date = new Date(post.date);
     const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>);
 
+    const related = (relatedPosts: PostSummary[]): JSX.Element => {
+        if (relatedPosts.length > 0) {
+            return <PostList posts={relatedPosts}/>;
+        }
+        return (
+            <p>
+                関連記事はまだありません。
+            </p>
+        );
+    };
+
     return (
         <DefaultLayout>
             <Head>
@@ -49,7 +60,7 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
                     <h1>
                         関連記事
                     </h1>
-                    <PostList posts={relatedPosts}/>
+                    {related(relatedPosts)}
                 </section>
             </Container>
         </DefaultLayout>

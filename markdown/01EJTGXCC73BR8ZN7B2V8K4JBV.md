@@ -1,6 +1,6 @@
 ---
 title: "1Password Families始めました"
-description: ""
+description: "1Passwordなぜ有料プランにしたか書き綴りました。"
 tags: ['ITツール']
 author: shota
 thumbnail: /images/posts/1password-hp.jpg
