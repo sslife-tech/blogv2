@@ -32,6 +32,10 @@ class MyDocument extends Document {
                 <body>
                 <Main/>
                 <NextScript/>
+                {/* Firebase SDK */}
+                <script src="/__/firebase/7.21.0/firebase-app.js"/>
+                <script src="/__/firebase/7.21.0/firebase-analytics.js"/>
+                <script src="/__/firebase/init.js"/>
                 </body>
             </Html>
         )
