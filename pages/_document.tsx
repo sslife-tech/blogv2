@@ -29,6 +29,7 @@ class MyDocument extends Document {
                     <meta name='msapplication-tap-highlight' content='no' />
                     <meta name='theme-color' content="#0070f3"/>
                     <meta property="og:site_name" content="SSLife Tech"/>
+                    <meta name="twitter:card" content="summary_large_image"/>
                 </Head>
                 <body>
                 <Main/>
