@@ -76,7 +76,7 @@ WiFiだけでなく、防犯カメラや電話、アンテナ、ドアベルな�
 
 屋内にある[UniFi Switch PoE 8 (150W)](https://store.ui.com/collections/unifi-network-routing-switching/products/unifi-switch-8-150w) に接続している [UniFi Protect G4-Bullet Camera](https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-bullet-camera) ですが、屋外に出すにあたってできるだけ家に穴をあけたくなったので、光回線が通っているCD管を通してLANケーブルを外に出すことにしました（ここでLANのコネクタをかしめるためのアイテムが新たに必要になる）。LANケーブルは屋外用のものを買ったので結構太め。そうすると2本目のLANケーブルが途中でせまくなってるCD管を通らない・・・。いや実際には通ったんですが、もっと伸ばして違うところに設置したいんですが、これ以上引っ張るのが怖いので2本通すのは諦めることに。
 
-そこで、屋外用のスイッチである[NanoSwitch](https://www.ui.com/accessories/nanoswitch/) を買うことに。どこで本家のストアにすら掲載がなかったのですが、なぜか日本の[Amazon](https://amzn.to/363xxTP)で購入できました。まだ到着待ちですが、多分ここから最大3本のPoE接続ができるはず。
+そこで、屋外用のスイッチである[NanoSwitch](https://www.ui.com/accessories/nanoswitch/) を買うことに。本家のストアにすら掲載がなかったのですが、なぜか日本の[Amazon](https://amzn.to/363xxTP)で購入できました。まだ到着待ちですが、これでCD管の中を通るのは1本になって、屋外のスイッチから最大3本のPoE接続ができるはず。
 
 現在は暫定的にこんな感じでついてます。
 
@@ -99,11 +99,11 @@ WiFiだけでなく、防犯カメラや電話、アンテナ、ドアベルな�
 当て逃げ犯特定に大いに貢献した [Ring](https://shop.ring.com/products/video-doorbell-3-plus) ですが、少なくとも日本で使うにはいくつか難点があります。
 
 * チャイムが鳴ってから接続が遅いことが多いし、たまにタイムアウトっぽくなってる
-* バッテリー式だと1ヶ月持たずに充電（有線は日本ではAC/ACアダプタとつなげればいける。バッテリーで動く分、他の海外ドアベル製品と比べると優れてはいる。）
+* バッテリー式だと1ヶ月持たずに要充電（有線は日本ではAC/ACアダプタとつなげればいける。バッテリーで動く分、他の海外ドアベル製品と比べると優れてはいる。）
 * 30USD/year払わないと映像が保存されない（60日間）。無料はリアルタイムのみ
 * Alexaと連携できるっぽいが日本ではできない？
 
-特に一つ目の接続に時間かかるのが致命的です。Ring購入直後、発売されたのが [UniFi Protect G4 Doorbell](https://store.ui.com/collections/unifi-protect/products/uvc-g4-doorbell) です。こちらはRingと比較して
+特に一つ目の接続に時間かかるのが致命的です。Ring購入直後、発売されたのが [UniFi Protect G4 Doorbell](https://store.ui.com/collections/unifi-protect/products/uvc-g4-doorbell) です（悔しい）。こちらはRingと比較して
 
 * 有線のみ（これもAC/ACアダプタでいけそう）
 * 映像は[UniFi Cloud Key Plus](https://store.ui.com/collections/unifi-protect-nvr/products/unifi-cloudkey-gen2-plus)に保存できる
