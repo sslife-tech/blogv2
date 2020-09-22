@@ -1,9 +1,7 @@
 import React from "react";
 import config from "~/Configuration";
 
-type Props = {}
-
-const FirebaseSDKLoader: React.FunctionComponent<Props> = () => {
+const FirebaseSDKLoader: React.FunctionComponent = () => {
     if (config.enableGoogleAnalytics) {
         return (
             <>
@@ -11,9 +9,9 @@ const FirebaseSDKLoader: React.FunctionComponent<Props> = () => {
                 <script src="/__/firebase/7.21.0/firebase-analytics.js"/>
                 <script src="/__/firebase/init.js"/>
             </>
-        )
+        );
     }
-    return (<div/>)
-}
+    return (<div/>);
+};
 
 export {FirebaseSDKLoader};
