@@ -1,6 +1,6 @@
 ---
 title: "コーヒー豆自家焙煎ハンズオン"
-description: ""
+description: "自宅でフライパンでコーヒー豆を焙煎する方法をご紹介します！"
 tags: ['コーヒー']
 author: shota
 thumbnail: /images/posts/coffee_01.jpg

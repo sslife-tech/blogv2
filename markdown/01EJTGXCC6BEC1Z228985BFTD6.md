@@ -1,6 +1,6 @@
 ---
 title: "人生でやりたいことリストの管理にfreedcampを採用しました"
-description: ""
+description: "人生でやりたいことリストをfreedcampでやってみたよ。"
 tags: ['ITツール']
 author: shota
 date: 2017-09-25T17:50:55+09:00

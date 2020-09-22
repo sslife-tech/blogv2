@@ -1,6 +1,6 @@
 ---
 title: "結婚しました〜！"
-description: ""
+description: "ご報告。結婚しました！"
 tags: [結婚]
 author: shiori
 thumbnail: /images/posts/marriage01.jpg

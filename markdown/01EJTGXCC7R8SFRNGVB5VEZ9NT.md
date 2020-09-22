@@ -1,6 +1,6 @@
 ---
 title: "結婚前・両家顔合わせポイント5つ"
-description: ""
+description: "結婚前の両家顔合わせポイントを5つ紹介します。"
 tags: ['結婚']
 author: shota
 thumbnail: /images/posts/family-meetup.jpg

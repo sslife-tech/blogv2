@@ -1,6 +1,6 @@
 ---
 title: "上高地で撮った写真を見てほしい！件"
-description: ""
+description: "上高地の写真はどれもきれいです。"
 tags: ['国内旅行','旅行']
 author: shiori
 date: 2017-09-25T19:01:44+09:00

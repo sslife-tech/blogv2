@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter, {GrayMatterFile} from 'gray-matter';
 import remark from 'remark';
+import externalLinks from 'remark-external-links';
 import html from 'remark-html';
 
 export interface PostSummary {
@@ -41,9 +42,12 @@ const getSortedPosts = (): PostSummary[] => {
 
 const relatedPosts = (post: PostSummary, max = 5): PostSummary[] =>
     getSortedPosts()
-        .filter((p) =>
-            post.tags.find((tag) => p.tags.includes(tag)) !== undefined
-        )
+        .filter((p) => {
+            if (p.slug === post.slug) {
+                return false;
+            }
+            return post.tags.find((tag) => p.tags.includes(tag)) !== undefined;
+        })
         .slice(0, max);
 
 const findPost = async (slug: string): Promise<PostDetail> => {
@@ -55,6 +59,7 @@ const findPost = async (slug: string): Promise<PostDetail> => {
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const matterResult = matter(fileContents);
     const processedContent = await remark()
+        .use(externalLinks, {target: "_blank", rel: ['nofollow']})
         .use(html)
         .process(matterResult.content);
 

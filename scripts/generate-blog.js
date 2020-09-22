@@ -16,7 +16,7 @@ title: ""
 description: ""
 tags: []
 author: shota or shiori
-thumbnail: /images/blog/grand_canyon/antelope_canyon.jpg
+thumbnail: /images/posts/grand_canyon/antelope_canyon.jpg
 date: ${date.toISOString()}
 ---`
 

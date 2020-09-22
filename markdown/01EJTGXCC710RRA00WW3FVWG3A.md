@@ -1,6 +1,6 @@
 ---
 title: "グランドキャニオンをレンタカーで周遊してきました"
-description: ""
+description: "新婚旅行でまずはアメリカ、グランドキャニオンに来ました！"
 tags: ["旅行", "海外旅行", "アメリカ"]
 author: shota
 thumbnail: /images/posts/grand_canyon/antelope_canyon.jpg

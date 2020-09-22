@@ -1,6 +1,6 @@
 ---
 title: "美しい作図ツール、Whimsicalが最高だった件"
-description: ""
+description: "今日はWhimsicalという作図ツールについてご紹介します。"
 tags: ['ITツール']
 author: shota
 thumbnail: /images/posts/whimsical.jpg

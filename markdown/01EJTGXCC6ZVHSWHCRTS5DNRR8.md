@@ -1,6 +1,6 @@
 ---
 title: "コスパ厨におすすめしたいちょっと贅沢な1万円のイヤホン"
-description: ""
+description: "1万前後でコスパが良いイヤホンを紹介します。"
 tags: ['QOL']
 author: shota
 thumbnail: /images/posts/earphone.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Blog引っ越しました"
-description: ""
+description: "Blog引っ越しのお知らせです。"
 tags: ['お知らせ']
 author: shota
 thumbnail: /images/posts/firebase.png

@@ -1,6 +1,6 @@
 ---
 title: "タイの秘境ピピレ島の海が素敵すぎた"
-description: ""
+description: "タイの秘境ピピレ島のきれいな海を紹介します。"
 tags: ['旅行','海外旅行','タイ']
 author: shiori
 thumbnail: /images/posts/phiphi_01.jpg
