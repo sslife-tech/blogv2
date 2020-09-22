@@ -1,12 +1,12 @@
 import React from "react";
-import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document'
+import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document';
 import {DocumentInitialProps} from "next/dist/next-server/lib/utils";
 import config from "~/Configuration";
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
         const initialProps = await Document.getInitialProps(ctx);
-        return {...initialProps}
+        return {...initialProps};
     }
 
     render(): JSX.Element {
@@ -38,8 +38,8 @@ class MyDocument extends Document {
                 <script src="/__/firebase/init.js"/>
                 </body>
             </Html>
-        )
+        );
     }
 }
 
-export default MyDocument
+export default MyDocument;

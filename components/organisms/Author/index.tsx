@@ -13,10 +13,10 @@ const authors = {
         image='/images/shiori.jpg'
         bio='Kotlinがんばるまん'
     />
-}
+};
 
-const getAuthor = (name: string) => authors[name]
+const getAuthor = (name: string): JSX.Element => authors[name];
 
 export {
     getAuthor,
-}
+};

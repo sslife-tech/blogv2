@@ -8,12 +8,12 @@ interface Props {
 }
 
 const PostList: React.FunctionComponent<Props> = ({posts}) => {
-    const list = posts.map((post, index) => <Post post={post} key={index} />)
+    const list = posts.map((post, index) => <Post post={post} key={index} />);
     return (
         <div className={style.container}>
             {list}
         </div>
-    )
-}
+    );
+};
 
 export {PostList};

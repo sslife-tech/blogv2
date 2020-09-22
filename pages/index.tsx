@@ -3,7 +3,7 @@ import {GetStaticProps, NextPage} from "next";
 import {getSortedPosts, PostSummary} from "~/lib/posts";
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
 import {PostList} from "~/components/organisms/PostList";
-import style from '~/styles/Home.module.css'
+import style from '~/styles/Home.module.css';
 import Head from "next/head";
 import config from "~/Configuration";
 import {Container} from "~/components/atoms/Container";
@@ -25,12 +25,12 @@ const Home: NextPage<Props> = ({posts}) => (
             </Container>
         </main>
     </DefaultLayout>
-)
+);
 
 export const getStaticProps: GetStaticProps<Props> = async () => ({
     props: {
         posts: getSortedPosts(),
     }
-})
+});
 
-export default Home
+export default Home;

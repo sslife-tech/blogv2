@@ -11,8 +11,8 @@ interface Props {
 }
 
 const Post: React.FunctionComponent<Props> = ({post}) => {
-    const date: Date = new Date(post.date)
-    const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>)
+    const date: Date = new Date(post.date);
+    const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>);
 
     return (
         <Link href={`/posts/${post.slug}`}>
@@ -35,7 +35,7 @@ const Post: React.FunctionComponent<Props> = ({post}) => {
                 </div>
             </div>
         </Link>
-    )
+    );
 };
 
 export {Post};
