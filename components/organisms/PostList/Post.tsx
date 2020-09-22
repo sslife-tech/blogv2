@@ -19,7 +19,7 @@ const Post: React.FunctionComponent<Props> = ({post}) => {
             <div className={style.container}>
                 <div className={style.img_container}>
                     <LazyLoad height={170} offset={100}>
-                        <img src={post.main_image} alt={post.title}/>
+                        <img src={post.thumbnail} alt={post.title}/>
                     </LazyLoad>
                 </div>
                 <div className={style.text_container}>

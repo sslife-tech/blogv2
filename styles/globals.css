@@ -21,3 +21,7 @@ img {
 * {
   box-sizing: border-box;
 }
+
+iframe {
+  max-width: 100%;
+}

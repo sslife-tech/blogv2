@@ -27,7 +27,7 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
             <Head>
                 <title>{post.title}</title>
                 <meta name="description" content={post.description}/>
-                <meta content={`${config.baseURL}${post.main_image}`} property="og:image"/>
+                <meta content={`${config.baseURL}${post.thumbnail}`} property="og:image"/>
             </Head>
             <Container>
                 <article>

@@ -3,12 +3,11 @@ title: "1Password Families始めました"
 description: ""
 tags: ['ITツール']
 author: shota
-main_image: /images/blog/1password-hp.jpg
+thumbnail: /images/posts/1password-hp.jpg
 date: 2019-02-23T18:59:49+09:00
-draft: false
 ---
 
-![1passwordホームページ](/images/blog/1password-hp.jpg)
+![1passwordホームページ](/images/posts/1password-hp.jpg)
 
 1Password使ってますか？
 
@@ -63,7 +62,7 @@ AlfredのPowerpackに課金していれば、1Passwordと連携できます。
 
 Prefix（僕の場合は`p`）を打って、URLもしくはタイトルで検索すると、ブラウザで開いてIDとPasswordを入力するところまで自動でやってくれます。
 
-![alfredの1password機能](/images/blog/1password-alfred.jpg)
+![alfredの1password機能](/images/posts/1password-alfred.jpg)
 
 https://www.alfredapp.com/powerpack/
 

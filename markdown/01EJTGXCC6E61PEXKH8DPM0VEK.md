@@ -3,9 +3,8 @@ title: "Scrapboxというドキュメント共有ツールがよさげだった�
 description: ""
 tags: ['ITツール']
 author: shota
-main_image: /images/blog/scrapbox1.jpg
+thumbnail: /images/posts/scrapbox1.jpg
 date: 2017-09-25T19:12:21+09:00
-draft: false
 ---
 
 [Gyazo](https://gyazo.com/ja)をやってる会社がドキュメント共有サービスを出していたので使ってみました。
@@ -24,14 +23,14 @@ Scrapboxはその貴重なプライベートプロジェクトが無料で作れ
 ブレストしたり、仕様を決めたりするときに
 
 ## 使い心地
-![scrapbox1.jpg](/images/blog/scrapbox1.jpg)
+![scrapbox1.jpg](/images/posts/scrapbox1.jpg)
 [Scrapbox ヘルプ - Scrapbox](https://scrapbox.io/help-jp)
 
 こちらはヘルプページですが、こんな感じで付箋形式に記事が並んでいきます。
 デザインも素敵だし、日本にサーバーがあるからか、サクサク動きます。
 
 個人的に気に入ってるのは、リンクとかハッシュタグで関連リンク集を作ってくれるとこです↓↓
-![scrapbox2.jpg](/images/blog/scrapbox2.jpg)
+![scrapbox2.jpg](/images/posts/scrapbox2.jpg)
 
 <script data-ad-client="ca-pub-9971307452839678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 

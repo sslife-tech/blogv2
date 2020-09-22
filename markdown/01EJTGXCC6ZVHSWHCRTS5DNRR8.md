@@ -3,12 +3,11 @@ title: "コスパ厨におすすめしたいちょっと贅沢な1万円のイ�
 description: ""
 tags: ['QOL']
 author: shota
-main_image: /images/blog/earphone.jpg
+thumbnail: /images/posts/earphone.jpg
 date: 2017-09-29T19:47:30+09:00
-draft: false
 ---
 
-![earphone](/images/blog/earphone.jpg)
+![earphone](/images/posts/earphone.jpg)
 こんにちは。ヘッドホンよりもイヤホン派のしょうちゃんです。今日は、**ちょっと贅沢な1万円のイヤホン**を紹介していきます。
 
 ## 時間がない方のためにまずは結論

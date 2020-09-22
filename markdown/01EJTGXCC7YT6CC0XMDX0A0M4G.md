@@ -3,14 +3,13 @@ title: "結婚しました〜！"
 description: ""
 tags: [結婚]
 author: shiori
-main_image: /images/blog/marriage01.jpg
+thumbnail: /images/posts/marriage01.jpg
 date: 2018-07-15T22:00:24+09:00
-draft: false
 ---
 
 この度、結婚しました〜！パチパチ :clap:
 
-![市役所にて](/images/blog/marriage02.jpg)
+![市役所にて](/images/posts/marriage02.jpg)
 
 楽しく！仲良く！をモットーに生きていきたいと思いますー
 

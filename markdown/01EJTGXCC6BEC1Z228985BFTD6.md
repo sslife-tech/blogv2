@@ -4,8 +4,7 @@ description: ""
 tags: ['ITツール']
 author: shota
 date: 2017-09-25T17:50:55+09:00
-main_image: /images/blog/freedcamp.jpg
-draft: false
+thumbnail: /images/posts/freedcamp.jpg
 ---
 
 [しおりん](https://www.facebook.com/shiori.sato.3762)とはキャリアとかライフプランとかこんなところに旅行に行きたいとか話をするんですが、
@@ -38,7 +37,7 @@ https://freedcamp.com
 
 サブタスクは主に行きたい旅行の地名たちを入れていきます↓↓↓
 
-![freedcamp](/images/blog/freedcamp.jpg)
+![freedcamp](/images/posts/freedcamp.jpg)
 
 たとえば、「イギリスに行きたい！」って行っても、一回で行きたいところに全部行けるわけじゃないのでそういうときに活躍します。ウェールズにはいけなかったら、ウェールズ以外のサブタスクを完了にしていきます。
 

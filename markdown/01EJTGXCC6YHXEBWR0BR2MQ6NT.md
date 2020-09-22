@@ -3,9 +3,8 @@ title: "コーヒー豆自家焙煎ハンズオン"
 description: ""
 tags: ['コーヒー']
 author: shota
-main_image: /images/blog/coffee_01.jpg
+thumbnail: /images/posts/coffee_01.jpg
 date: 2017-12-20T22:54:51+09:00
-draft: false
 ---
 
 この記事は[Coffee Advent Calendar 2017](https://adventar.org/calendars/2165)の20日目の記事です。
@@ -17,21 +16,21 @@ draft: false
 
 コーヒー豆屋さんで「生豆で」と言えば、購入できます。
 
-![](/images/blog/coffee_01.jpg)
+![](/images/posts/coffee_01.jpg)
 
 ## 一次ハゼ
 アルミホイルの中心を丸くくり抜いて、フライパンに蓋をし、予熱します。
 
 温まったら、穴からコーヒー豆を注ぎ、フライパンを振ります。
 
-![](/images/blog/coffee_02.jpg)
+![](/images/posts/coffee_02.jpg)
 
 ## 二次ハゼ
 パチパチと音が聞こえてきたら、アルミホイルを取っ払います。
 
 ばかばかと水蒸気が出ていきます。
 
-![](/images/blog/coffee_03.jpg)
+![](/images/posts/coffee_03.jpg)
 
  <script data-ad-client="ca-pub-9971307452839678" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
  
@@ -40,21 +39,21 @@ draft: false
 
 てかてか！油っぽい！
 
-![](/images/blog/coffee_04.jpg)
+![](/images/posts/coffee_04.jpg)
 
 ## ハネを飛ばす
 豆に殻っぽいのがついてるので、扇風機で飛ばします。
 
 家の中じゃできないので、ガレージでやりました。
 
-![](/images/blog/coffee_05.jpg)
+![](/images/posts/coffee_05.jpg)
 
 ## 淹れる
 ここからはいつもどおりです。
 
 ミルで挽いて、ドリップで抽出します。
 
-![](/images/blog/coffee_06.jpg)
+![](/images/posts/coffee_06.jpg)
 
 ## 飲む
 焙煎したてだから、香り高かったです。
@@ -63,7 +62,7 @@ draft: false
 
 （写真を撮り忘れ、食べかけのクッキーがお見え・・・）
 
-![](/images/blog/coffee_07.jpg)
+![](/images/posts/coffee_07.jpg)
 
 雑な説明になったけど、やってみればわかります（実践あるのみ！）
 
