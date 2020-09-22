@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.text_container {
+    margin-left: 24px;
+}
+
+.name {
+    color: #212529;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.bio {
+    margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: block;
+    }
+
+    .img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .text_container {
+        margin: 24px 0 0;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .bio {
+        margin-top: 12px;
+    }
+}
