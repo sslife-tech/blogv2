@@ -3,34 +3,49 @@ import {NextPage, GetStaticPaths, GetStaticProps} from "next";
 import React from "react";
 import Head from 'next/head'
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
+import config from "~/Configuration";
+import {PageTitle} from "~/components/atoms/PageTitle";
+import {Tag} from "~/components/atoms/Tag";
+import style from "~/styles/PostSlug.module.css";
+import {Time} from "~/components/atoms/Time";
+import {Container} from "~/components/atoms/Container";
+import {HTML} from "~/components/atoms/HTML";
 
 type Props = {
     post: PostDetail;
 }
 
-const PostPage: NextPage<Props> = ({post}) => (
-    <DefaultLayout>
-        <Head>
-            <title>{post.title}</title>
-        </Head>
+const PostPage: NextPage<Props> = ({post}) => {
+    const date: Date = new Date(post.date)
+    const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>)
 
-        {post.title}
-        <br/>
-        {post.description}
-        <br/>
-        {post.author}
-        <br/>
-        {post.main_image}
-        <br/>
-        {post.tags.join(',')}
-        <br/>
-        {post.slug}
-        <br/>
-        {new Date(post.date).toLocaleString()}
-        <br/>
-        <section dangerouslySetInnerHTML={{__html: post.html}}/>
-    </DefaultLayout>
-)
+    return (
+        <DefaultLayout>
+            <Head>
+                <title>{post.title}</title>
+                <meta name="description" content={post.description}/>
+                <meta content={`${config.baseURL}${post.main_image}`} property="og:image"/>
+            </Head>
+            <Container>
+                <article>
+                    <PageTitle title={post.title} />
+                    <div className={style.meta}>
+                        <div>
+                            <Time date={date}/>
+                        </div>
+                        <div>
+                            {tags}
+                        </div>
+                        <div>
+                            {post.author}
+                        </div>
+                    </div>
+                    <HTML html={post.html}/>
+                </article>
+            </Container>
+        </DefaultLayout>
+    )
+}
 
 export const getStaticPaths: GetStaticPaths = async () => ({
     paths: getSortedPosts().map(post => `/posts/${post.slug}`) || [],

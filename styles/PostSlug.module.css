@@ -1,0 +1,12 @@
+.meta {
+  text-align: right;
+  display: grid;
+  grid-gap: 0.7em;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .meta {
+    margin-bottom: 36px;
+  }
+}
