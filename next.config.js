@@ -1,14 +1,12 @@
-module.exports = {
-    distDir: 'build',
+const isProd = process.env.NODE_ENV === "production";
 
-    webpack: (config, { isServer }) => {
-        // Fixes npm packages that depend on `fs` module
-        if (!isServer) {
-            config.node = {
-                fs: 'empty'
-            }
-        }
+const withPWA = require("next-pwa")
+const runtimeCaching = require('next-pwa/cache')
 
-        return config
-    },
-}
+module.exports = withPWA({
+    pwa: {
+        disable: !isProd,
+        dest: "public",
+        runtimeCaching
+    }
+})

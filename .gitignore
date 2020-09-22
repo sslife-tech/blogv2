@@ -33,3 +33,7 @@ yarn-error.log*
 # vercel
 .vercel
 .firebase
+
+# PWA
+public/sw.js
+public/workbox-c2b5e142.js
