@@ -4,6 +4,7 @@ import {PostSummary} from "~/lib/posts";
 import Link from "next/link";
 import {Time} from "~/components/atoms/Time";
 import {Tag} from "~/components/atoms/Tag";
+import LazyLoad from 'react-lazyload';
 
 interface Props {
     post: PostSummary;
@@ -17,7 +18,9 @@ const Post: React.FunctionComponent<Props> = ({post}) => {
         <Link href={`/posts/${post.slug}`}>
             <div className={style.container}>
                 <div className={style.img_container}>
-                    <img src={post.main_image} alt={post.title}/>
+                    <LazyLoad height={170} offset={100}>
+                        <img src={post.main_image} alt={post.title}/>
+                    </LazyLoad>
                 </div>
                 <div className={style.text_container}>
                     <div className={style.time}>

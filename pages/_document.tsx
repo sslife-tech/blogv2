@@ -13,10 +13,7 @@ class MyDocument extends Document {
         return (
             <Html lang='ja'>
                 <Head>
-                    <meta name='viewport' content="width=device-width,initial-scale=1,minimum-scale=1"/>
                     <link rel="icon" href="/favicon.png"/>
-                    <meta name='theme-color' content="#0070f3"/>
-                    <meta property="og:site_name" content="SSLife Tech"/>
                     <link rel="shortcut icon" href={`${config.baseURL}/favicon.png`}/>
                     <link rel='apple-touch-icon' href={`${config.baseURL}/images/apple-touch-icon.png`}/>
                 </Head>
