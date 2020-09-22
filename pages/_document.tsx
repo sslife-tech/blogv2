@@ -24,7 +24,7 @@ class MyDocument extends Document {
                     <meta name='description' content='しょうちゃんとしおりんのブログ' />
                     <meta name='format-detection' content='telephone=no' />
                     <meta name='mobile-web-app-capable' content='yes' />
-                    <meta name='msapplication-TileColor' content='#0070f3' />
+                    <meta name='msapplication-TileColor' content='#FFFFFF' />
                     <meta name='msapplication-tap-highlight' content='no' />
                     <meta name='theme-color' content="#0070f3"/>
                     <meta property="og:site_name" content="SSLife Tech"/>
