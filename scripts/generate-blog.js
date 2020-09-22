@@ -26,7 +26,7 @@ const generate = () => {
 
     fs.writeFile(fullPath, template(), function (err) {
         if (err) throw err;
-        console.log('File is created successfully.');
+        console.log('A blog template is created successfully.');
         console.log(fullPath);
     });
 }
