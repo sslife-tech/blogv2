@@ -37,12 +37,14 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
         <DefaultLayout>
             <Head>
                 <title>{post.title}</title>
+                <meta property="og:title" content={post.title}/>
                 <meta name="description" content={post.description}/>
+                <meta property="og:description" content={post.description}/>
                 <meta content={`${config.baseURL}${post.thumbnail}`} property="og:image"/>
             </Head>
             <Container>
                 <article>
-                    <PageTitle title={post.title} />
+                    <PageTitle title={post.title}/>
                     <div className={style.meta}>
                         <div>
                             <Time date={date}/>
