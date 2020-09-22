@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    row-gap: 72px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        row-gap: 48px;
+    }
+}

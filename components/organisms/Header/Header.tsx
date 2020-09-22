@@ -4,7 +4,9 @@ import {Logo} from "~/components/atoms/Logo";
 
 const Header: React.FunctionComponent = () => (
     <header className={style.header}>
-        <Logo link='/'/>
+        <nav className={style.nav}>
+            <Logo link='/'/>
+        </nav>
     </header>
 );
 
