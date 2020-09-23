@@ -1,9 +1,7 @@
-import {findPost, getSortedPosts, PostDetail, PostSummary, relatedPosts} from "~/lib/posts";
 import {NextPage, GetStaticPaths, GetStaticProps} from "next";
 import React from "react";
 import Head from 'next/head';
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
-import config from "~/Configuration";
 import {PageTitle} from "~/components/atoms/PageTitle";
 import {Tag} from "~/components/atoms/Tag";
 import style from "~/styles/PostSlug.module.css";
@@ -12,17 +10,20 @@ import {Container} from "~/components/atoms/Container";
 import {HTML} from "~/components/atoms/HTML";
 import {getAuthor} from "~/components/organisms/Author";
 import {PostList} from "~/components/organisms/PostList";
+import {configuration} from "~/Configuration";
+import {PostData, PostMetaData} from "~/@types";
+import {registry} from "~/Registry";
 
 type Props = {
-    post: PostDetail;
-    relatedPosts: PostSummary[];
+    post: PostData;
+    relatedPosts: PostMetaData[];
 }
 
 const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
     const date: Date = new Date(post.date);
     const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>);
 
-    const related = (relatedPosts: PostSummary[]): JSX.Element => {
+    const related = (relatedPosts: PostMetaData[]): JSX.Element => {
         if (relatedPosts.length > 0) {
             return <PostList posts={relatedPosts}/>;
         }
@@ -40,7 +41,7 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
                 <meta property="og:title" content={post.title}/>
                 <meta name="description" content={post.description}/>
                 <meta property="og:description" content={post.description}/>
-                <meta content={`${config.baseURL}${post.thumbnail}`} property="og:image"/>
+                <meta content={`${configuration.baseURL}${post.thumbnail}`} property="og:image"/>
             </Head>
             <Container>
                 <article>
@@ -70,16 +71,16 @@ const PostPage: NextPage<Props> = ({post, relatedPosts}) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => ({
-    paths: getSortedPosts().map(post => `/posts/${post.slug}`) || [],
+    paths: (await registry.postAdapter.getAll()).map(post => `/posts/${post.slug}`) || [],
     fallback: false,
 });
 
 export const getStaticProps: GetStaticProps<Props> = async ({params}) => {
-    const post = await findPost(params.slug as string);
+    const post = await registry.postAdapter.find(params.slug as string);
     return {
         props: {
             post,
-            relatedPosts: relatedPosts(post)
+            relatedPosts: await registry.postAdapter.related(post, 5)
         }
     };
 };

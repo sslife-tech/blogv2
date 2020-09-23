@@ -1,8 +1,8 @@
 import React from "react";
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document';
 import {DocumentInitialProps} from "next/dist/next-server/lib/utils";
-import config from "~/Configuration";
 import {FirebaseSDKLoader} from "~/components/atoms/FirebaseSDKLoader";
+import {configuration} from "~/Configuration";
 
 class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
@@ -16,8 +16,8 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="icon" href="/favicon.png"/>
                     <link rel='manifest' href='/manifest.json' />
-                    <link rel="shortcut icon" href={`${config.baseURL}/favicon.png`}/>
-                    <link rel='apple-touch-icon' href={`${config.baseURL}/images/apple-touch-icon.png`}/>
+                    <link rel="shortcut icon" href={`${configuration.baseURL}/favicon.png`}/>
+                    <link rel='apple-touch-icon' href={`${configuration.baseURL}/images/apple-touch-icon.png`}/>
                     <meta name='application-name' content='SSLife Tech' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
                     <meta name='apple-mobile-web-app-status-bar-style' content='default' />
