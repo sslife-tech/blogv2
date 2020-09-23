@@ -1,10 +1,10 @@
 import React from "react";
 import style from './PostList.module.css';
-import {PostSummary} from "~/lib/posts";
 import {Post} from "./Post";
+import {PostMetaData} from "~/@types";
 
 interface Props {
-    posts: PostSummary[];
+    posts: PostMetaData[];
 }
 
 const PostList: React.FunctionComponent<Props> = ({posts}) => {

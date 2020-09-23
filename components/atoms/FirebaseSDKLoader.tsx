@@ -1,8 +1,8 @@
 import React from "react";
-import config from "~/Configuration";
+import {configuration} from "~/Configuration";
 
 const FirebaseSDKLoader: React.FunctionComponent = () => {
-    if (config.enableGoogleAnalytics) {
+    if (configuration.enableGoogleAnalytics) {
         return (
             <>
                 <script src="/__/firebase/7.21.0/firebase-app.js"/>

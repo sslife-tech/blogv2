@@ -1,15 +1,16 @@
 import React from "react";
 import {GetStaticProps, NextPage} from "next";
-import {getSortedPosts, PostSummary} from "~/lib/posts";
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
 import {PostList} from "~/components/organisms/PostList";
 import style from '~/styles/Home.module.css';
 import Head from "next/head";
-import config from "~/Configuration";
 import {Container} from "~/components/atoms/Container";
+import {configuration} from "~/Configuration";
+import {PostMetaData} from "~/@types";
+import {registry} from "~/Registry";
 
 type Props = {
-  posts: PostSummary[];
+  posts: PostMetaData[];
 }
 
 const Home: NextPage<Props> = ({posts}) => (
@@ -17,7 +18,7 @@ const Home: NextPage<Props> = ({posts}) => (
         <Head>
             <title>SSLife Tech</title>
             <meta name="description" content="しょうちゃんとしおりんのブログ"/>
-            <meta content={`${config.baseURL}/ogp.jpg`} property="og:image"/>
+            <meta content={`${configuration.baseURL}/ogp.jpg`} property="og:image"/>
         </Head>
         <main className={style.main}>
             <Container>
@@ -29,7 +30,7 @@ const Home: NextPage<Props> = ({posts}) => (
 
 export const getStaticProps: GetStaticProps<Props> = async () => ({
     props: {
-        posts: getSortedPosts(),
+        posts: await registry.postAdapter.getAll(),
     }
 });
 

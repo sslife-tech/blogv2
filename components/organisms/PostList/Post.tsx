@@ -1,13 +1,13 @@
 import React from "react";
 import style from './Post.module.css';
-import {PostSummary} from "~/lib/posts";
 import Link from "next/link";
 import {Time} from "~/components/atoms/Time";
 import {Tag} from "~/components/atoms/Tag";
 import LazyLoad from 'react-lazyload';
+import {PostMetaData} from "~/@types";
 
 interface Props {
-    post: PostSummary;
+    post: PostMetaData;
 }
 
 const Post: React.FunctionComponent<Props> = ({post}) => {
