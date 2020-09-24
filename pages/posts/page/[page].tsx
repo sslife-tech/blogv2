@@ -1,4 +1,4 @@
-import {NextPage, GetStaticProps} from "next";
+import {NextPage, GetStaticPaths, GetStaticProps} from "next";
 import React from "react";
 import Head from 'next/head';
 import {DefaultLayout} from "~/components/layouts/DefaultLayout";
@@ -8,16 +8,23 @@ import {PostList} from "~/components/organisms/PostList";
 import {configuration} from "~/Configuration";
 import {PostMetaData} from "~/@types";
 import {registry} from "~/Registry";
-import {Pagenation} from "~/components/organisms/Pagenation";
+import {Pagenation, pagesArray} from "~/components/organisms/Pagenation";
 import type {Pager} from "~/components/organisms/Pagenation";
-import {hrefGenerator} from "~/pages/posts/page/[page]";
+import {LinkProps} from "next/link";
 
 type Props = {
     posts: PostMetaData[];
     pager: Pager;
 }
 
-const Home: NextPage<Props> = ({posts, pager}) => {
+export const hrefGenerator = (page: number): LinkProps => {
+    if (page === 1) {
+        return {href: '/'};
+    }
+    return {href: '/posts/page/[page]', as: `/posts/page/${page}`};
+};
+
+const PostPage: NextPage<Props> = ({posts, pager}) => {
     return (
         <DefaultLayout>
             <Head>
@@ -37,8 +44,20 @@ const Home: NextPage<Props> = ({posts, pager}) => {
 
 const pagePerItem = 5;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-    const current = 1;
+export const getStaticPaths: GetStaticPaths = async () => {
+    const total = Math.ceil(await registry.postAdapter.count() / pagePerItem);
+
+    // page 1 is excluded because of same as top page
+    const paths: string[] = pagesArray(total).slice(1).map(page => `/posts/page/${page}`);
+
+    return {
+        paths,
+        fallback: false,
+    };
+};
+
+export const getStaticProps: GetStaticProps<Props> = async ({params}) => {
+    const current = Number(params.page as string);
 
     const offset: number = (current - 1) * pagePerItem;
     const posts: PostMetaData[] = await registry.postAdapter.get(offset, pagePerItem);
@@ -54,4 +73,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     };
 };
 
-export default Home;
+export default PostPage;

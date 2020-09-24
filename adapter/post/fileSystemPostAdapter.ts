@@ -15,7 +15,7 @@ class PostNotFound extends Error {
 const fileSystemPostAdapter: PostAdapter = {
     getAll: async (): Promise<PostMetaData[]> => allPosts(),
 
-    get: async (offset: number, amount: number): Promise<PostMetaData[]> => allPosts().slice(offset, amount),
+    get: async (offset: number, limit: number): Promise<PostMetaData[]> => allPosts().slice(offset, offset + limit),
 
     count: async (): Promise<number> => fs.readdirSync(postsDirectory).length,
 

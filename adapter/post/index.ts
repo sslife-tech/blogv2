@@ -2,7 +2,7 @@ import {PostMetaData, PostData} from "~/@types";
 
 export interface PostAdapter {
     getAll: () => Promise<PostMetaData[]>;
-    get: (offset: number, amount: number) => Promise<PostMetaData[]>;
+    get: (offset: number, limit: number) => Promise<PostMetaData[]>;
     count: () => Promise<number>;
     related: (post: PostMetaData, max: number) => Promise<PostMetaData[]>;
     find: (slug: string) => Promise<PostData>;
