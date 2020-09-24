@@ -15,8 +15,8 @@ const Post: React.FunctionComponent<Props> = ({post}) => {
     const tags = post.tags.map((tag, index) => <Tag text={tag} key={index}/>);
 
     return (
-        <Link href={`/posts/${post.slug}`}>
-            <div className={style.container}>
+        <Link href='/posts/[slug]' as={`/posts/${encodeURIComponent(post.slug)}`}>
+            <a className={style.container}>
                 <div className={style.img_container}>
                     <LazyLoad height={170} offset={100}>
                         <img src={post.thumbnail} alt={post.title}/>
@@ -33,7 +33,7 @@ const Post: React.FunctionComponent<Props> = ({post}) => {
                         {tags}
                     </div>
                 </div>
-            </div>
+            </a>
         </Link>
     );
 };
