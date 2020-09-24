@@ -14,8 +14,11 @@ class PostNotFound extends Error {
 
 const fileSystemPostAdapter: PostAdapter = {
     getAll: async (): Promise<PostMetaData[]> => allPosts(),
+
     get: async (offset: number, amount: number): Promise<PostMetaData[]> => allPosts().slice(offset, amount),
+
     count: async (): Promise<number> => fs.readdirSync(postsDirectory).length,
+
     related: async (post: PostMetaData, max: number) => allPosts()
         .filter((p) => {
             if (p.slug === post.slug) {
@@ -24,6 +27,7 @@ const fileSystemPostAdapter: PostAdapter = {
             return post.tags.find((tag) => p.tags.includes(tag)) !== undefined;
         })
         .slice(0, max),
+
     find: async (slug: string): Promise<PostData> => {
         const fullPath = path.join(postsDirectory, `${slug}.md`);
         if (!fs.existsSync(fullPath)) {
