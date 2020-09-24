@@ -42,10 +42,10 @@ const PostPage: NextPage<Props> = ({posts, pager}) => {
     );
 };
 
-const pagePerItem = 5;
+export const pagePerItems = 5;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const total = Math.ceil(await registry.postAdapter.count() / pagePerItem);
+    const total = Math.ceil(await registry.postAdapter.count() / pagePerItems);
 
     // page 1 is excluded because of same as top page
     const paths: string[] = pagesArray(total).slice(1).map(page => `/posts/page/${page}`);
@@ -59,15 +59,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props> = async ({params}) => {
     const current = Number(params.page as string);
 
-    const offset: number = (current - 1) * pagePerItem;
-    const posts: PostMetaData[] = await registry.postAdapter.get(offset, pagePerItem);
+    const offset: number = (current - 1) * pagePerItems;
+    const posts: PostMetaData[] = await registry.postAdapter.get(offset, pagePerItems);
 
     return {
         props: {
             posts,
             pager: {
                 current,
-                total: Math.ceil(await registry.postAdapter.count() / pagePerItem),
+                total: Math.ceil(await registry.postAdapter.count() / pagePerItems),
             },
         }
     };

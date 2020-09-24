@@ -10,7 +10,7 @@ import {PostMetaData} from "~/@types";
 import {registry} from "~/Registry";
 import {Pagenation} from "~/components/organisms/Pagenation";
 import type {Pager} from "~/components/organisms/Pagenation";
-import {hrefGenerator} from "~/pages/posts/page/[page]";
+import {hrefGenerator, pagePerItems} from "~/pages/posts/page/[page]";
 
 type Props = {
     posts: PostMetaData[];
@@ -35,20 +35,18 @@ const Home: NextPage<Props> = ({posts, pager}) => {
     );
 };
 
-const pagePerItem = 5;
-
 export const getStaticProps: GetStaticProps<Props> = async () => {
     const current = 1;
 
-    const offset: number = (current - 1) * pagePerItem;
-    const posts: PostMetaData[] = await registry.postAdapter.get(offset, pagePerItem);
+    const offset: number = (current - 1) * pagePerItems;
+    const posts: PostMetaData[] = await registry.postAdapter.get(offset, pagePerItems);
 
     return {
         props: {
             posts,
             pager: {
                 current,
-                total: Math.ceil(await registry.postAdapter.count() / pagePerItem),
+                total: Math.ceil(await registry.postAdapter.count() / pagePerItems),
             },
         }
     };
