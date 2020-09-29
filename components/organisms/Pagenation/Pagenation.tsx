@@ -6,6 +6,7 @@ interface Props {
     current: number;
     total: number;
     hrefGenerator: (page: number) => LinkProps;
+    maxAmount?: number;
 }
 
 interface Pager {
@@ -13,10 +14,20 @@ interface Pager {
     total: number;
 }
 
-const pagesArray = (total: number): number[] => [...new Array(total).keys()].map(i => i + 1);
+const pagenation = (current: number, total: number, maxAmount: number): number[] => {
+    const maxSideAmount = Math.round((maxAmount - 1) / 2);
 
-const Pagenation: React.FunctionComponent<Props> = ({current, total, hrefGenerator}) => {
-    const pages: JSX.Element[] = pagesArray(total).map((page, index) => {
+    const normalStart: number = Math.max(1, current - maxSideAmount);
+    const normalEnd: number = Math.min(total, current + maxSideAmount);
+
+    const start = Math.max(1, normalStart + (normalEnd - (current + maxSideAmount)));
+    const end = Math.min(total, normalEnd + ((maxSideAmount - current) + normalStart));
+
+    return [...new Array(end - start + 1).keys()].map(i => i + start);
+};
+
+const Pagenation: React.FunctionComponent<Props> = ({current, total, hrefGenerator, maxAmount}) => {
+    const pages: JSX.Element[] = pagenation(current, total, maxAmount).map((page, index) => {
         if (page === current) {
             return (
                 <li key={index} className={style.active}>
@@ -45,5 +56,9 @@ const Pagenation: React.FunctionComponent<Props> = ({current, total, hrefGenerat
     );
 };
 
-export {Pagenation, pagesArray};
+Pagenation.defaultProps = {
+    maxAmount: 5,
+};
+
+export {Pagenation};
 export type {Pager};

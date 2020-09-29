@@ -8,7 +8,7 @@ import {PostList} from "~/components/organisms/PostList";
 import {configuration} from "~/Configuration";
 import {PostMetaData} from "~/@types";
 import {registry} from "~/Registry";
-import {Pagenation, pagesArray} from "~/components/organisms/Pagenation";
+import {Pagenation} from "~/components/organisms/Pagenation";
 import type {Pager} from "~/components/organisms/Pagenation";
 import {LinkProps} from "next/link";
 
@@ -47,7 +47,8 @@ export const pagePerItems = 5;
 export const getStaticPaths: GetStaticPaths = async () => {
     const total = Math.ceil(await registry.postAdapter.count() / pagePerItems);
 
-    // page 1 is excluded because of same as top page
+    // page 1 is excluded because of same as top pag
+    const pagesArray = (total: number): number[] => [...new Array(total).keys()].map(i => i + 1);
     const paths: string[] = pagesArray(total).slice(1).map(page => `/posts/page/${page}`);
 
     return {
