@@ -1,7 +1,6 @@
 import React from "react";
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document';
 import {DocumentInitialProps} from "next/dist/next-server/lib/utils";
-import {FirebaseSDKLoader} from "~/components/atoms/FirebaseSDKLoader";
 import {configuration} from "~/Configuration";
 
 class MyDocument extends Document {
@@ -34,7 +33,6 @@ class MyDocument extends Document {
                 <body>
                 <Main/>
                 <NextScript/>
-                <FirebaseSDKLoader/>
                 </body>
             </Html>
         );
