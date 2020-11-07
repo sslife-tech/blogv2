@@ -4,6 +4,7 @@ import '~/styles/reset.css';
 import '~/styles/globals.css';
 import Head from "next/head";
 import * as Sentry from '@sentry/node';
+import * as SentryBrowser from '@sentry/browser';
 import { Integrations } from "@sentry/tracing";
 
 if (!!process.env.SENTRY_ENVIRONMENT) {
@@ -20,6 +21,14 @@ if (!!process.env.SENTRY_ENVIRONMENT) {
         release: process.env.SENTRY_ENVIRONMENT === "production" ? process.env.COMMIT_SHA : undefined,
 
         environment: process.env.SENTRY_ENVIRONMENT,
+
+        beforeSend(event, hint) {
+            // Check if it is an exception, and if so, show the report dialog
+            if (event.exception) {
+                SentryBrowser.showReportDialog({ eventId: event.event_id });
+            }
+            return event;
+        },
     });
 }
 
