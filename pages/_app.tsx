@@ -6,9 +6,9 @@ import Head from "next/head";
 import * as Sentry from '@sentry/node';
 import { Integrations } from "@sentry/tracing";
 
-if (process.env.SENTRY_DSN) {
+if (!!process.env.SENTRY_ENVIRONMENT) {
     Sentry.init({
-        dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+        dsn: "https://80c42edba5d34fc59884a8c273be896c@o473167.ingest.sentry.io/5507831",
 
         integrations: [new Integrations.BrowserTracing()],
 
@@ -16,6 +16,8 @@ if (process.env.SENTRY_DSN) {
         // of transactions for performance monitoring.
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
+
+        release: process.env.SENTRY_ENVIRONMENT === "production" ? process.env.COMMIT_SHA : undefined,
 
         environment: process.env.SENTRY_ENVIRONMENT,
     });
