@@ -22,9 +22,6 @@ process.env.SENTRY_DSN = SENTRY_DSN;
 let nextEnv = {};
 if (!!SENTRY_ENVIRONMENT) {
     nextEnv = {
-        SENTRY_DSN,
-        SENTRY_ORG,
-        SENTRY_PROJECT,
         COMMIT_SHA,
         SENTRY_ENVIRONMENT,
     }
