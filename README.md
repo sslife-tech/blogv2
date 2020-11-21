@@ -1,4 +1,6 @@
-![Deploy to Firebase Hosting on PR](https://github.com/sslife-tech/blogv2/workflows/Deploy%20to%20Firebase%20Hosting%20on%20PR/badge.svg)
+![Deploy Production](https://github.com/sslife-tech/blogv2/workflows/Deploy%20Production/badge.svg)
+
+SSLife Blog.
 
 ## Getting Started
 
@@ -16,4 +18,4 @@ npm run generate:post
 
 ## Deploy
 
-Merge `master` branch, then it starts deploying automatically. 
+Merge `main` branch, then it starts deploying automatically. 
