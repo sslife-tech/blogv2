@@ -1,4 +1,4 @@
-![Deploy](https://github.com/sslife-tech/blogv2/workflows/Deploy/badge.svg)
+![Deploy to Firebase Hosting on PR](https://github.com/sslife-tech/blogv2/workflows/Deploy%20to%20Firebase%20Hosting%20on%20PR/badge.svg)
 
 ## Getting Started
 

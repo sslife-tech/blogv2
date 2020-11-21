@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
+    "build": "npm run next:build && npm run next:export",
+    "next:build": "next build",
+    "next:export": "next export",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore --max-warnings=0 .",
     "generate:post": "node scripts/generate-post.js",
     "deploy": "firebase deploy"
