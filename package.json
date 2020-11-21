@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
+    "build": "npm run next:build && npm run next:export",
+    "next:build": "next build",
+    "next:export": "next export",
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore --max-warnings=0 .",
-    "generate:post": "node scripts/generate-post.js"
+    "generate:post": "node scripts/generate-post.js",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "@sentry/browser": "^5.27.4",
-    "@sentry/node": "^5.27.4",
     "@sentry/tracing": "^5.27.4",
     "@zeit/next-source-maps": "0.0.3",
     "gray-matter": "^4.0.2",
@@ -34,6 +35,7 @@
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.14.0",
     "eslint-plugin-react": "^7.21.5",
+    "firebase-tools": "^8.16.2",
     "typescript": "^4.1.2",
     "ulid": "^2.3.0"
   }

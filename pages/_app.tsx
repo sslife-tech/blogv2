@@ -3,11 +3,10 @@ import {AppProps} from "next/app";
 import '~/styles/reset.css';
 import '~/styles/globals.css';
 import Head from "next/head";
-import * as Sentry from '@sentry/node';
-import * as SentryBrowser from '@sentry/browser';
+import * as Sentry from '@sentry/browser';
 import { Integrations } from "@sentry/tracing";
 
-if (process.env.SENTRY_ENVIRONMENT) {
+if (process.env.sentryEnvironment) {
     Sentry.init({
         dsn: "https://80c42edba5d34fc59884a8c273be896c@o473167.ingest.sentry.io/5507831",
 
@@ -18,14 +17,14 @@ if (process.env.SENTRY_ENVIRONMENT) {
         // We recommend adjusting this value in production
         tracesSampleRate: 1.0,
 
-        release: process.env.SENTRY_ENVIRONMENT === "production" ? process.env.COMMIT_SHA : undefined,
+        release: process.env.sentryEnvironment === "production" ? process.env.commitSha : undefined,
 
-        environment: process.env.SENTRY_ENVIRONMENT,
+        environment: process.env.sentryEnvironment,
 
         beforeSend(event) {
             // Check if it is an exception, and if so, show the report dialog
             if (event.exception) {
-                SentryBrowser.showReportDialog({ eventId: event.event_id });
+                Sentry.showReportDialog({ eventId: event.event_id });
             }
             return event;
         },
