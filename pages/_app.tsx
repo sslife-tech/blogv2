@@ -7,7 +7,7 @@ import * as Sentry from '@sentry/node';
 import * as SentryBrowser from '@sentry/browser';
 import { Integrations } from "@sentry/tracing";
 
-if (!!process.env.SENTRY_ENVIRONMENT) {
+if (process.env.SENTRY_ENVIRONMENT) {
     Sentry.init({
         dsn: "https://80c42edba5d34fc59884a8c273be896c@o473167.ingest.sentry.io/5507831",
 
@@ -22,7 +22,7 @@ if (!!process.env.SENTRY_ENVIRONMENT) {
 
         environment: process.env.SENTRY_ENVIRONMENT,
 
-        beforeSend(event, hint) {
+        beforeSend(event) {
             // Check if it is an exception, and if so, show the report dialog
             if (event.exception) {
                 SentryBrowser.showReportDialog({ eventId: event.event_id });
