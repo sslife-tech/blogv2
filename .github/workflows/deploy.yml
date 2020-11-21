@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
+  - push
+#    branches:
+#      - main
 
 jobs:
   build:
@@ -28,8 +28,15 @@ jobs:
             ${{ runner.os }}-node-
       - run: npm ci
       - run: npm run build
+        env:
+          BASE_URL: https://www.sslife.tech
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_ENVIRONMENT: production
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          COMMIT_SHA: ${{ github.sha }}
       - run: npm run export
       - run: npm run deploy -- --token "$FIREBASE_TOKEN"
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          BASE_URL: https://www.sslife.tech

@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@sentry/browser": "^5.27.4",
-    "@sentry/node": "^5.27.4",
     "@sentry/tracing": "^5.27.4",
     "@zeit/next-source-maps": "0.0.3",
     "gray-matter": "^4.0.2",
