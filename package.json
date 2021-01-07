@@ -15,7 +15,7 @@
     "@sentry/tracing": "^5.27.4",
     "@zeit/next-source-maps": "0.0.3",
     "gray-matter": "^4.0.2",
-    "next": "^10.0.2",
+    "next": "^10.0.5",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^3.1.5",
     "react": "17.0.1",
